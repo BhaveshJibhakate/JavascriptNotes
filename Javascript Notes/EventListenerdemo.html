@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <h1>This is to test event in javascript</h1>
+    <button id="btn1" style="font-size: 50px; background-color: #f44336; padding:50px 80px">click event</button>
+    <button id="btn2" style="font-size: 50px; background-color: blueviolet; margin-left: 10px;">mouseover</button>
+    <button id="btn3" style="font-size: 50px; background-color: greenyellow; margin-left:20px;">click</button>
+    <div style="padding:10px; border-style: solid;">
+    <button id="btn4" style="border-radius:16px; background-color: aqua; font-size: 40px;"
+     onclick="(function f1(){ alert('this is fourth button')})()" >click 4th</button>
+     <label><h4>This button is to check inline event listener</h4></label>
+    </div>
+    <script>
+        const btn1=document.getElementById('btn1')
+        const btn2=document.getElementById('btn2')
+        const btn3=document.getElementById('btn3')
+
+        btn1.addEventListener('click',()=>{ alert("you clicked red button")})
+        btn2.addEventListener('mouseover',()=>{ alert("you clicked violet button")})
+        btn3.addEventListener('click',()=>{ alert("you clicked green button")})
+
+    </script>
+
+</body>
+</html>
+
+<!-- click:  Fires when the user clicks on an element.
+dblclick:    Fires when the user double-clicks on an element.
+mouseover:   Fires when the mouse pointer is moved onto an element.
+mouseout:    Fires when the mouse pointer is moved out of an element.
+mousemove:   Fires when the mouse pointer is moving while it is over an element.
+mousedown:   Fires when the user presses a mouse button.
+mouseup:     Fires when the user releases a mouse button.
+mouseenter:  Similar to mouseover, but doesn't bubble.
+mouseleave:  Similar to mouseout, but doesn't bubble.  -->
+
+<!-- Keyboard Events
+keydown: Fires when the user presses a key.
+keyup: Fires when the user releases a key.
+keypress: Fires when the user presses a key (deprecated, use keydown and keyup).
+
+
+Form Events
+submit: Fires when a form is submitted.
+reset: Fires when a form is reset.
+focus: Fires when an element gains focus.
+blur: Fires when an element loses focus.
+change: Fires when the value of an element changes.
+input: Fires when the value of an <input>, <textarea>, or <select> element has been changed.
+
+
+Window Events
+load: Fires when the whole page has loaded, including all dependent resources such as stylesheets and images.
+resize: Fires when the document view (window) is resized.
+scroll: Fires when the document view or an element is being scrolled.
+unload: Fires when the user navigates away from the page.
+beforeunload: Fires before the user leaves the page, allowing you to show a confirmation dialog. -->
